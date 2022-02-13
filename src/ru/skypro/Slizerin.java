@@ -1,51 +1,39 @@
 package ru.skypro;
 
 public class Slizerin extends Hogwarts {
-    public int trick;
-    public int determination;
-    public int ambition;
-    public int resourcefulness;
-    public int lustOfPower;
+    public final int trick;
+    public final int determination;
+    public final int ambition;
+    public final int resourcefulness;
+    public final int lustOfPower;
 
     public int getTrick() {
         return trick;
     }
 
-    public void setTrick(int trick) {
-        this.trick = trick;
-    }
+
 
     public int getDetermination() {
         return determination;
-    }
+}
 
-    public void setDetermination(int determination) {
-        this.determination = determination;
-    }
+
 
     public int getAmbition() {
         return ambition;
     }
 
-    public void setAmbition(int ambition) {
-        this.ambition = ambition;
-    }
 
     public int getResourcefulness() {
         return resourcefulness;
     }
 
-    public void setResourcefulness(int resourcefulness) {
-        this.resourcefulness = resourcefulness;
-    }
+
 
     public int getLustOfPower() {
         return lustOfPower;
     }
 
-    public void setLustOfPower(int lustOfPower) {
-        this.lustOfPower = lustOfPower;
-    }
 
     @Override
     public String toString() {

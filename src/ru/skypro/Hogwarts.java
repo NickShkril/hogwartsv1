@@ -1,10 +1,10 @@
 package ru.skypro;
 
 
-public class Hogwarts {
-    private  String name;
-    private  int magicPower;
-    private  int transgrecyDistance;
+public abstract class Hogwarts {
+    private final String name;
+    private final int magicPower;
+    private final int transgrecyDistance;
 
     public Hogwarts(String name, int magicPower, int transgrecyDistance) {
         this.name = name;

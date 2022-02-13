@@ -1,9 +1,9 @@
 package ru.skypro;
 
-public class Hufflepuff extends Hogwarts  {
-    private int industrious;
-    private int loyality;
-    private int honor;
+public class Hufflepuff extends Hogwarts {
+    private final int industrious;
+    private final int loyality;
+    private final int honor;
 
     @Override
     public String toString() {
@@ -15,7 +15,7 @@ public class Hufflepuff extends Hogwarts  {
 
 
     public Hufflepuff(String name, int magicPower, int transgrecyDistance, int industrious, int loyality, int honor) {
-        super(name,magicPower,transgrecyDistance);
+        super(name, magicPower, transgrecyDistance);
         this.industrious = industrious;
         this.loyality = loyality;
         this.honor = honor;
@@ -52,23 +52,15 @@ public class Hufflepuff extends Hogwarts  {
         return industrious;
     }
 
-    public void setIndustrious(int industrious) {
-        this.industrious = industrious;
-    }
 
     public int getLoyality() {
         return loyality;
     }
 
-    public void setLoyality(int loyality) {
-        this.loyality = loyality;
-    }
 
     public int getHonor() {
         return honor;
     }
 
-    public void setHonor(int honor) {
-        this.honor = honor;
-    }
+
 }

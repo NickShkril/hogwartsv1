@@ -1,10 +1,10 @@
 package ru.skypro;
 
 public class Ravenclaw extends Hogwarts {
-    private int smart;
-    private int wise;
-    private int witty;
-    private int creative;
+    private final int smart;
+    private final int wise;
+    private final int witty;
+    private final int creative;
 
     public Ravenclaw(String name, int magicPower, int transgrecyDistance, int smart, int wise, int witty, int creative) {
         super(name, magicPower, transgrecyDistance);
@@ -53,25 +53,18 @@ public class Ravenclaw extends Hogwarts {
         return smart;
     }
 
-    public void setSmart(int smart) {
-        this.smart = smart;
-    }
+
 
     public int getWise() {
         return wise;
     }
 
-    public void setWise(int wise) {
-        this.wise = wise;
-    }
 
     public int getWitty() {
         return witty;
     }
 
-    public void setWitty(int witty) {
-        this.witty = witty;
-    }
+
 
     @Override
     public String toString() {
@@ -85,7 +78,5 @@ public class Ravenclaw extends Hogwarts {
         return creative;
     }
 
-    public void setCreative(int creative) {
-        this.creative = creative;
-    }
+
 }

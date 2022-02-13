@@ -2,33 +2,26 @@ package ru.skypro;
 
 
 public class Griffindor extends Hogwarts {
-    private int nobility;
-    private int honour;
-    private int bravery;
+    private final   int nobility;
+    private final int honour;
+    private final int bravery;
 
     public int getNobility() {
         return nobility;
     }
 
-    public void setNobility(int nobility) {
-        this.nobility = nobility;
-    }
 
     public int getHonour() {
         return honour;
     }
 
-    public void setHonor(int honor) {
-        this.honour = honor;
-    }
+
 
     public int getBravery() {
         return bravery;
     }
 
-    public void setBravery(int bravery) {
-        this.bravery = bravery;
-    }
+
 
 
     @Override
