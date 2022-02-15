@@ -7,16 +7,27 @@ public class Slizerin extends Hogwarts {
     public final int resourcefulness;
     public final int lustOfPower;
 
+    @Override
+    public void getPersonalQualities() {
+        System.out.println("Имя, " + super.getName() +
+                " Дистанция трансгресии, " + super.getTransgrecyDistance() +
+                " Сила магии, " + super.getMagicPower() +
+                " Хитрость, " + this.getTrick() +
+                " Решимость, " + this.getDetermination() +
+                " Амбициозность, " + this.getAmbition() +
+                " Находчивость, " + this.getResourcefulness() +
+                " Жажда власти " + this.getLustOfPower()
+                + ".");
+    }
+
     public int getTrick() {
         return trick;
     }
 
 
-
     public int getDetermination() {
         return determination;
-}
-
+    }
 
 
     public int getAmbition() {
@@ -29,7 +40,6 @@ public class Slizerin extends Hogwarts {
     }
 
 
-
     public int getLustOfPower() {
         return lustOfPower;
     }
@@ -37,7 +47,7 @@ public class Slizerin extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString()+ " Хитрость " + trick +
+        return super.toString() + " Хитрость " + trick +
                 ", Решимость " + determination +
                 ", Амбициозность " + ambition +
                 ", Находчивость " + resourcefulness +

@@ -6,6 +6,16 @@ public class Hufflepuff extends Hogwarts {
     private final int honor;
 
     @Override
+    public void getPersonalQualities() {
+        System.out.println("Имя, " + super.getName() +
+                " Дистанция трансгресии, " + super.getTransgrecyDistance() +
+                " Сила магии, " + super.getMagicPower() +
+                " Трудолюбие, " + this.getIndustrious() +
+                " Преданность, " + this.getLoyality() +
+                " Честь " + this.getHonor() + ".");
+    }
+
+    @Override
     public String toString() {
         return super.toString() +
                 " Трудолюбие " + industrious +

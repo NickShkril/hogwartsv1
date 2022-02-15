@@ -12,6 +12,9 @@ public abstract class Hogwarts {
         this.transgrecyDistance = transgrecyDistance;
     }
 
+
+
+
     public String getName() {
         return name;
     }
@@ -20,10 +23,13 @@ public abstract class Hogwarts {
         return magicPower;
     }
 
+
     public int getTransgrecyDistance() {
-        return transgrecyDistance;
+        return  transgrecyDistance;
     }
 
+
+    public abstract void getPersonalQualities();
 
     @Override
     public String toString() {
@@ -49,5 +55,7 @@ public abstract class Hogwarts {
             System.out.println("Расстояние трансгресии " + this.name + " ниже чем у " + student.getName());
         }
     }
+
+
 
 }

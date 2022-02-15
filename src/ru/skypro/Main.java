@@ -15,6 +15,7 @@ public class Main {
         Ravenclaw chang = new Ravenclaw("Jou Chang", 30, 30, 40, 40, 40, 40);
         Ravenclaw patil = new Ravenclaw("Padma Patil", 30, 30, 40, 40, 40, 40);
         Ravenclaw belby = new Ravenclaw("Markus Belby", 30, 30, 40, 40, 40, 40);
+
         harry.compareStudents(drako);
         System.out.println(harry);
         harry.compareGriffindor(hermiona);
@@ -24,6 +25,10 @@ public class Main {
         System.out.println(diggory);
         graham.compareSlitherin(goyle);
         System.out.println(goyle);
+        ron.getPersonalQualities();
+        drako.getPersonalQualities();
+        finchFletchy.getPersonalQualities();
+        belby.getPersonalQualities();
     }
 
 

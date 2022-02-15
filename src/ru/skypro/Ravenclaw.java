@@ -1,6 +1,6 @@
 package ru.skypro;
 
-public class Ravenclaw extends Hogwarts {
+public  class Ravenclaw extends Hogwarts {
     private final int smart;
     private final int wise;
     private final int witty;
@@ -13,6 +13,18 @@ public class Ravenclaw extends Hogwarts {
         this.witty = witty;
         this.creative = creative;
     }
+    @Override
+    public void getPersonalQualities() {
+        System.out.println("Имя, " + super.getName() +
+                " Дистанция трансгресии, " + super.getTransgrecyDistance() +
+                " Сила магии, " + super.getMagicPower() +
+                " Трудолюбие, " + this.getSmart() +
+                " Преданность, " + this.getWise() +
+                " Честь " + this.getWitty() +
+                " Креавтиность " + this.getCreative() + ".");
+    }
+
+
 
     public void compareRavenclaw(Ravenclaw student) {
         if (this.smart > student.getSmart()) {
@@ -54,7 +66,6 @@ public class Ravenclaw extends Hogwarts {
     }
 
 
-
     public int getWise() {
         return wise;
     }
@@ -63,7 +74,6 @@ public class Ravenclaw extends Hogwarts {
     public int getWitty() {
         return witty;
     }
-
 
 
     @Override
